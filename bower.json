@@ -1,0 +1,14 @@
+{
+    "name": "lc-app",
+    "version": "1.0.0",
+    "main": "index.html",
+    "moduleType": [],
+    "dependencies": {
+        "font-awesome": "latest",
+        "animate.css": "latest",
+        "materialize": "latest",
+        "angular": "~1.4.7",
+        "angular-route": "~1.4.7",
+        "ngstorage": "~0.3.9"
+    }
+}

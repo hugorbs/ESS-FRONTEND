@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>ESS FRONTEND</title>
+
+    <!-- CSS -->
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="public/libs/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="public/libs/font-awesome/css/font-awesome.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- JS -->
+    <script src="public/libs/jquery/dist/jquery.min.js"></script>
+    <script src="public/libs/angular/angular.min.js"></script>
+    <script src="public/libs/angular-route/angular-route.min.js"></script>
+    <script src="public/libs/ngstorage/ngStorage.min.js"></script>
+    <script type="text/javascript" src="public/libs/materialize/dist/js/materialize.min.js"></script>
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="public/js/app.js"></script>
+    <script src="public/js/controllers/MainCtrl.js"></script>
+    <script src="public/js/services.js"></script>
+
+</head>
+<body ng-app="ess-app" ng-controller="MainCtrl">
+<div class="container">
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <div ng-view=""></div>
+
+</div>
+</body>
+</html>
