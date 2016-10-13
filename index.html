@@ -27,15 +27,14 @@
     <script src="public/js/app.js"></script>
     <script src="public/js/controllers/MainCtrl.js"></script>
     <script src="public/js/services.js"></script>
-
 </head>
 <body ng-app="ess-app" ng-controller="MainCtrl">
-<div ng-include src="'public/views/navbar.html'"></div>
-<div class="container">
-    <!-- ANGULAR DYNAMIC CONTENT -->
-    <div ng-view=""></div>
+  <div ng-include src="'public/views/navbar.html'"></div>
+  <div class="container">
+      <!-- ANGULAR DYNAMIC CONTENT -->
+      <div ng-view=""></div>
 
-</div>
-<div ng-include src="'public/views/footer.html'"></div>
+  </div>
+  <div ng-include src="'public/views/footer.html'"></div>
 </body>
 </html>
