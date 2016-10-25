@@ -6,12 +6,17 @@
      opacity: .50 // Opacity of modal background
    });
   });
+
+  function closeModal(){
+    $('#modal1').closeModal();
+  }
 </script>
 
-<nav class="light-blue lighten-1" role="navigation">
+<nav class="light-blue lighten-1" role="navigation" ng-controller="MainCtrl">
   <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
     <ul class="right hide-on-med-and-down">
-      <li><a class="modal-trigger" href="#modal1">Sign In</a></li>
+      <li><a class="modal-trigger" href="#modal1" ng-show="!isLoggedIn">Sign In</a></li>
+      <li><a ng-click="logOut()" ng-show="isLoggedIn">logOut</a></li>
     </ul>
 
     <ul id="nav-mobile" class="side-nav">

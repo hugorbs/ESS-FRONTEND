@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style media="screen">
+      h6{
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="profile-page-header" class="card">
+        <div class="card-image waves-effect waves-block waves-light" style="height: 250px;">
+            <img class="activator" src="public/resources/user-profile-bg.jpg" alt="user background">
+        </div>
+        <figure class="card-profile-image" style="width: 110px; position: absolute; top: 190px; z-index: 1; left: 40px; cursor: pointer; margin: 0;">
+            <img src="public/resources/avatar.png" alt="profile image" class="circle z-depth-2 responsive-img activator">
+        </figure>
+        <div class="card-content" style="margin-top: -40px; height: 120px;">
+          <div class="row">
+            <div class="col s3 offset-s2">
+                <h4 class="card-title grey-text text-darken-4">{{currentUser.name}}</h4>
+                <h6><p class="grey-text">Student</p></h6>
+            </div>
+            <div class="col s2 center-align">
+                <h4 class="card-title grey-text text-darken-4">5</h4>
+                <h6><p class="grey-text">Cadeiras</p></h6>
+            </div>
+            <div class="col s2 center-align">
+                <h4 class="card-title grey-text text-darken-4">17</h4>
+                <h6><p class="grey-text">Faltas</p></h6>
+            </div>
+            <div class="col s2 center-align">
+                <h4 class="card-title grey-text text-darken-4">3</h4>
+                <h6><p class="grey-text">Avaliações</p></h6>
+            </div>
+            <div class="col s1 right-align">
+              <a class="btn-floating activator waves-effect waves-light orange right">
+                  <i class="small material-icons">perm_identity</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-reveal" style="display: none; transform: translateY(0px);">
+          
+            <p>
+              <span class="card-title orange-text">{{currentUser.name}}<i class="fa fa-times right" aria-hidden="true"></i></span>
+            </p>
+            <p>
+              <span><i class="fa fa-user" aria-hidden="true"></i> Student</span>
+            </p>
+
+            <p><i class="fa fa-phone" aria-hidden="true"></i> +1 (612) 222 8989</p>
+            <p><i class="fa fa-envelope-o" aria-hidden="true"></i> {{currentUser.email}}</p>
+            <p><i class="fa fa-birthday-cake" aria-hidden="true"></i> 18th June 1990</p>
+        </div>
+    </div>
+
+  </body>
+</html>
