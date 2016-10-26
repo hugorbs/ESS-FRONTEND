@@ -5,6 +5,9 @@
      dismissible: true, // Modal can be dismissed by clicking outside of the modal
      opacity: .50 // Opacity of modal background
    });
+
+   // Initialize collapse button
+   $(".button-collapse").sideNav();
   });
 
   function closeModal(){
@@ -20,9 +23,10 @@
     </ul>
 
     <ul id="nav-mobile" class="side-nav">
-      <li><a href="#">Navbar Link</a></li>
+      <li><a class="modal-trigger" href="#modal1" ng-show="!isLoggedIn">Sign In</a></li>
+      <li><a ng-click="logOut()" ng-show="isLoggedIn">logOut</a></li>
     </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    <a href="#test" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
   </div>
 </nav>
 

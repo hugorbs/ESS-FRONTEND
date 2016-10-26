@@ -4,7 +4,7 @@
   "main": "index.html",
   "moduleType": [],
   "dependencies": {
-    "font-awesome": "latest",
+    "font-awesome": "^4.7.0",
     "animate.css": "latest",
     "materialize": "latest",
     "angular": "~1.4.7",
