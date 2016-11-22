@@ -1,7 +1,8 @@
 /* Application File */
 angular.module('ess-app', [
   'ngStorage',
-  'ngRoute'
+  'ngRoute',
+  'chart.js'
 ])
 .config(['$routeProvider', '$httpProvider', '$locationProvider', function ($routeProvider, $httpProvider, $locationProvider) {
   $routeProvider

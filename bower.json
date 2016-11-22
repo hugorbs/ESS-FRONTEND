@@ -10,6 +10,8 @@
     "angular": "~1.4.7",
     "angular-route": "~1.4.7",
     "ngstorage": "~0.3.9",
-    "mdi": "^1.7.22"
+    "mdi": "^1.7.22",
+    "chart.js": "^2.4.0",
+    "angular-chart.js": "^1.0.3"
   }
 }

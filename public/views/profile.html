@@ -5,7 +5,30 @@
       h6{
         font-size: 0.9rem;
       }
+      h2 {
+        font-family:Roboto;
+        font-weight: 300;
+        text-align: center;
+      }
     </style>
+    <script type="text/javascript">
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["ESS", "Métodos", "GDI"],
+      datasets: [{
+        label: 'Faltas',
+        data: [12, 19, 3],
+        backgroundColor: "rgba(153,255,51,1)"
+      }, {
+        label: 'Presença',
+        data: [30, 29, 5],
+        backgroundColor: "rgba(255,153,0,1)"
+      }]
+    }
+    });
+    </script>
   </head>
   <body>
     <div id="profile-page-header" class="card">
@@ -54,6 +77,39 @@
             <p><i class="fa fa-birthday-cake" aria-hidden="true"></i> 18th June 1990</p>
         </div>
     </div>
-
+    <div class="row">
+      <div class="col s6">
+        <h2 class="blue-text">Gráfico 1</h2>
+        <canvas id="bar" class="chart chart-bar animated slideInLeft"
+          chart-data="G1_data" chart-labels="G1_labels"> chart-series="series"
+        </canvas>
+      </div>
+      <div class="col s6">
+        <h2 class="blue-text">Gráfico 2</h2>
+        <canvas id="pie" class="chart chart-pie animated slideInRight"
+          chart-data="G2_data" chart-labels="G2_labels" chart-options="options">
+        </canvas>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6">
+        <h2 class="blue-text">Gráfico 3</h2>
+        <canvas id="line" class="chart chart-line animated slideInLeft" chart-data="G3_data"
+        chart-labels="G3_labels" chart-series="G3_series" chart-options="G3_options"
+        chart-dataset-override="G3_datasetOverride" chart-click="G3_onClick">
+        </canvas>
+      </div>
+      <div class="col s6">
+        <h2 class="blue-text">Gráfico 4</h2>
+        <canvas id="radar" class="chart chart-radar animated slideInRight"
+          chart-data="G4_data" chart-options="G4_options" chart-labels="G4_labels">
+        </canvas>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <h2 class="blue-text">Gráfico 5</h2>
+      </div>
+    </div>
   </body>
 </html>
