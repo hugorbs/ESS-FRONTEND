@@ -78,37 +78,119 @@
         </div>
     </div>
     <div class="row">
+      <div class="col s12">
+        <h2 class="blue-text">Registro de Aulas</h2>
+        <table class="striped">
+        <thead>
+          <tr>
+              <th data-field="id">Cadeira</th>
+              <th data-field="id">Professor</th>
+              <th data-field="name">Data</th>
+              <th data-field="price">Avaliação</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>ESS</td>
+            <td>Kiev</td>
+            <td>08:00 - 10:00 20/11/2016</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>GDI</td>
+            <td>Robson</td>
+            <td>10:00 - 12:00 15/11/2016</td>
+            <td> - </td>
+          </tr>
+          <tr>
+            <td>Métodos</td>
+            <td>Renato</td>
+            <td>13:00 - 15:00 10/11/2016</td>
+            <td> - </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="row">
       <div class="col s6">
-        <h2 class="blue-text">Gráfico 1</h2>
+        <h2 class="blue-text">Faltas por Cadeira</h2>
         <canvas id="bar" class="chart chart-bar animated slideInLeft"
-          chart-data="G1_data" chart-labels="G1_labels"> chart-series="series"
+          chart-data="G1_data" chart-labels="G1_labels" chart-series="series">
         </canvas>
       </div>
       <div class="col s6">
-        <h2 class="blue-text">Gráfico 2</h2>
-        <canvas id="pie" class="chart chart-pie animated slideInRight"
-          chart-data="G2_data" chart-labels="G2_labels" chart-options="options">
+        <h2 class="blue-text">Faltas por Mês</h2>
+        <canvas id="line" class="chart chart-line animated slideInRight" chart-data="G3_data"
+        chart-labels="G3_labels" chart-series="G1_series" chart-options="G3_options"
+        chart-dataset-override="G3_datasetOverride" chart-click="G3_onClick">
         </canvas>
       </div>
     </div>
     <div class="row">
       <div class="col s6">
-        <h2 class="blue-text">Gráfico 3</h2>
-        <canvas id="line" class="chart chart-line animated slideInLeft" chart-data="G3_data"
-        chart-labels="G3_labels" chart-series="G3_series" chart-options="G3_options"
-        chart-dataset-override="G3_datasetOverride" chart-click="G3_onClick">
+        <h2 class="blue-text">Minha % de Faltas</h2>
+        <canvas id="pie" class="chart chart-pie animated slideInLeft"
+          chart-data="G2_data" chart-labels="G2_labels" chart-options="options">
         </canvas>
       </div>
       <div class="col s6">
-        <h2 class="blue-text">Gráfico 4</h2>
+        <h2 class="blue-text">Distribuição das Faltas</h2>
         <canvas id="radar" class="chart chart-radar animated slideInRight"
-          chart-data="G4_data" chart-options="G4_options" chart-labels="G4_labels">
+          chart-data="G1_data" chart-options="G1_options" chart-series="G1_series" chart-labels="G1_labels">
         </canvas>
       </div>
     </div>
     <div class="row">
       <div class="col s12">
-        <h2 class="blue-text">Gráfico 5</h2>
+        <h2 class="blue-text">Minha % de Faltas por Cadeira</h2>
+        <div class="col s1">
+
+        </div>
+        <div class="col s2">
+          <canvas id="pie" class="chart chart-pie"
+            chart-data="G5_data" chart-labels="G5_labels" chart-options="options">
+          </canvas>
+          <p style="text-align:center">
+            GDI
+          </p>
+        </div>
+        <div class="col s2">
+          <canvas id="pie" class="chart chart-pie"
+            chart-data="G6_data" chart-labels="G5_labels" chart-options="options">
+          </canvas>
+          <p style="text-align:center">
+            ESS
+          </p>
+        </div>
+        <div class="col s2">
+          <canvas id="pie" class="chart chart-pie"
+            chart-data="G7_data" chart-labels="G5_labels" chart-options="options">
+          </canvas>
+          <p style="text-align:center">
+            PCOM
+          </p>
+        </div>
+        <div class="col s2">
+          <canvas id="pie" class="chart chart-pie"
+            chart-data="G8_data" chart-labels="G5_labels" chart-options="options">
+          </canvas>
+          <p style="text-align:center">
+            Sinais
+          </p>
+        </div>
+        <div class="col s2">
+          <canvas id="pie" class="chart chart-pie"
+            chart-data="G9_data" chart-labels="G5_labels" chart-options="options">
+          </canvas>
+          <p style="text-align:center">
+            Métodos
+          </p>
+        </div>
+        <div class="col s1">
+
+        </div>
       </div>
     </div>
   </body>
